@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="245dp"
+    android:layout_height="110dp"
+    android:clipChildren="false"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_master"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_marginBottom="@dimen/dimens6"
+            android:layout_marginLeft="@dimen/dimens5"
+            android:layout_marginTop="@dimen/dimens6"
+            android:src="@drawable/meinv1" />
+
+        <TextView
+            android:id="@+id/tv_master_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens6"
+            android:layout_marginTop="@dimen/dimens36"
+            android:layout_toRightOf="@id/iv_master"
+            android:text="@string/master_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_nation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens40"
+            android:text="@string/nation_name"
+            android:textColor="@color/text_b3"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimens1"
+            android:layout_below="@id/tv_master_name"
+            android:layout_marginLeft="@dimen/dimens6"
+            android:layout_marginRight="@dimen/dimens10"
+            android:layout_toRightOf="@id/iv_master"
+            android:background="@color/text_e5" />
+
+        <TextView
+            android:id="@+id/tv_master_des"
+            android:layout_width="@dimen/dimens127"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_marginLeft="@dimen/dimens6"
+            android:layout_marginTop="@dimen/dimens6"
+            android:layout_toRightOf="@id/iv_master"
+            android:text="来自瑞士的设计与精确性"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/grid_light_black"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
